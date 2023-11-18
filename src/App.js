@@ -1,6 +1,7 @@
 import React from 'react'
 import { ColorModeContext , useMode } from './theme'
 import { CssBaseline , ThemeProvider, Typography } from '@mui/material'
+import Topbar from "../src/pages/global/Topbar"
 
 const App = () => {
   const [theme , colorMode] = useMode()
@@ -10,6 +11,7 @@ const App = () => {
       <CssBaseline/>
           <div className='app'>
             <div className='content'>
+              <Topbar/>
             </div>
           </div>
 
