@@ -1,6 +1,6 @@
 import React from 'react'
 import { ColorModeContext , useMode } from './theme'
-import { CssBaseline , ThemeProvider, Typography } from '@mui/material'
+import { CssBaseline , ThemeProvider } from '@mui/material'
 import Topbar from "../src/pages/global/Topbar"
 import Sidebar from './pages/global/Sidebar'
 import Dashboard from './pages/dashboard/Dashboard'
