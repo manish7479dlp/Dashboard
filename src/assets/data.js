@@ -11,8 +11,8 @@ export  const DATA = [
         icon: <SchoolOutlinedIcon />,
       },
       {
-        title: "Mock Test",
-        to:"/mock",
+        title: "Contacts",
+        to:"/contact",
         icon: <QuizIcon />,
       },
       {
