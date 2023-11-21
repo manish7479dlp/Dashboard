@@ -1,4 +1,6 @@
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import QuizIcon from '@mui/icons-material/Quiz';
+import Diversity3Icon from '@mui/icons-material/Diversity3';
 export  const DATA = [
   {
     title: "Student",
@@ -9,14 +11,14 @@ export  const DATA = [
         icon: <SchoolOutlinedIcon />,
       },
       {
-        title: "Attandance",
-        to:"/attandance",
-        icon: <SchoolOutlinedIcon />,
+        title: "Mock Test",
+        to:"/mock",
+        icon: <QuizIcon />,
       },
       {
-        title: "Class",
-        to:"/class",
-        icon: <SchoolOutlinedIcon />,
+        title: "Team",
+        to:"/team",
+        icon: <Diversity3Icon />,
       },
     ],
   },
