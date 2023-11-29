@@ -7,6 +7,7 @@ import Dashboard from './pages/dashboard/Dashboard'
 import { Route, Routes } from 'react-router-dom'
 import Team from './pages/Team'
 import Contact from "./pages/Contact"
+import Academic from "./pages/student/Academic"
 // import Test from './components/Test'
 
 const App = () => {
@@ -23,6 +24,8 @@ const App = () => {
                 <Route path="/dashboard" element={<Dashboard/>}/>
                 <Route path="/team" element={<Team/>}/>
                 <Route path="/contact" element={<Contact/>}/>
+                <Route path="/academic" element={<Academic/>}/>
+
 
 
               </Routes>
