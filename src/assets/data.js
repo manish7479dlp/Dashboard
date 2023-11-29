@@ -19,7 +19,7 @@ export  const DATA = [
       },
       {
         title: "Resource",
-        to:"/resources",
+        to:"/resource",
         icon: <LibraryBooksIcon />,
       },
       {
