@@ -1,6 +1,6 @@
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import QuizIcon from '@mui/icons-material/Quiz';
-import Diversity3Icon from '@mui/icons-material/Diversity3';
+// import Diversity3Icon from '@mui/icons-material/Diversity3';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 export  const DATA = [
