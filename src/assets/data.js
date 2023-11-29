@@ -1,24 +1,31 @@
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import QuizIcon from '@mui/icons-material/Quiz';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 export  const DATA = [
   {
     title: "Student",
     subSection: [
       {
-        title: "Examination",
-        to:"/exam",
+        title: "Academic",
+        to:"/academic",
         icon: <SchoolOutlinedIcon />,
       },
       {
-        title: "Contacts",
-        to:"/contact",
-        icon: <QuizIcon />,
+        title: "Finance",
+        to:"/finance",
+        icon: <CurrencyRupeeIcon />,
       },
       {
-        title: "Team",
-        to:"/team",
-        icon: <Diversity3Icon />,
+        title: "Resource",
+        to:"/resources",
+        icon: <LibraryBooksIcon />,
+      },
+      {
+        title: "Exam",
+        to:"/exam",
+        icon: <QuizIcon />,
       },
     ],
   },
