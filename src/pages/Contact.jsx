@@ -9,6 +9,12 @@ const Contacts = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
+  const onRowClick = (data, row) => {
+    // Access the data of the clicked row
+    alert(data.row.name)
+    console.log('Clicked Row Data:', data.row);
+  };
+
   const columns = [
     { field: "id", headerName: "ID", flex: 0.5 },
     { field: "registrarId", headerName: "Registrar ID" },
@@ -94,6 +100,7 @@ const Contacts = () => {
           rows={mockDataContacts}
           columns={columns}
           components={{ Toolbar: GridToolbar }}
+          onRowClick={onRowClick}
         />
       </Box>
     </Box>
