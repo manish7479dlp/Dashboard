@@ -10,6 +10,7 @@ import Contact from "./pages/Contact"
 import Academic from "./pages/student/Academic"
 import Finance from './pages/student/Finance'
 import Resource from './pages/student/Resource'
+import Register from './pages/register/Register'
 // import Test from './components/Test'
 
 const App = () => {
@@ -29,6 +30,8 @@ const App = () => {
                 <Route path="/academic" element={<Academic/>}/>
                 <Route path="/finance" element={<Finance/>}/>
                 <Route path="/resource" element={<Resource/>}/>
+                <Route path="/register" element={<Register/>}/>
+
 
 
 
