@@ -13,6 +13,7 @@ import Resource from './pages/student/Resource'
 import Register from './pages/register/Register'
 import Bar from './pages/Bar'
 import Pie from './pages/Pie'
+import Line from './pages/Line'
 // import Test from './components/Test'
 
 const App = () => {
@@ -35,6 +36,8 @@ const App = () => {
                 <Route path="/register" element={<Register/>}/>
                 <Route path="/barchart" element={<Bar/>}/>
                 <Route path="/piechart" element={<Pie/>}/>
+                <Route path="/linechart" element={<Line/>}/>
+
 
 
 

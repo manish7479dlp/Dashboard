@@ -7,6 +7,7 @@ import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import PieChartIcon from '@mui/icons-material/PieChart';
+import SsidChartIcon from '@mui/icons-material/SsidChart';
 export  const DATA = [
   {
     title: "Student",
@@ -69,6 +70,11 @@ export  const DATA = [
         title: "Pie Chart",
         to:"/piechart",
         icon: <PieChartIcon />,
+      },
+      {
+        title: "Line Chart",
+        to:"/linechart",
+        icon: <SsidChartIcon />,
       },
     ],
   },
