@@ -4,6 +4,7 @@ import QuizIcon from '@mui/icons-material/Quiz';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
+import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 export  const DATA = [
   {
     title: "Student",
@@ -53,9 +54,9 @@ export  const DATA = [
     title: "Administration",
     subSection: [
       {
-        title: "Examination",
-        to:"/exam",
-        icon: <SchoolOutlinedIcon />,
+        title: "Register",
+        to:"/register",
+        icon: <PersonAddAltIcon />,
       },
       {
         title: "Attandance",
