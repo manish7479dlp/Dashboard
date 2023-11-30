@@ -17,6 +17,10 @@ const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
+  const downloadReport = () => {
+    alert("It's is not implemented yet..")
+  }
+
   return (
     <Box m="20px">
       {/* HEADER */}
@@ -25,6 +29,7 @@ const Dashboard = () => {
 
         <Box>
           <Button
+            onClick={downloadReport}
             sx={{
               backgroundColor: colors.blueAccent[700],
               color: colors.grey[100],
@@ -154,7 +159,9 @@ const Dashboard = () => {
               </Typography>
             </Box>
             <Box>
-              <IconButton>
+              <IconButton
+              onClick={downloadReport}
+              >
                 <DownloadOutlinedIcon
                   sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
                 />
