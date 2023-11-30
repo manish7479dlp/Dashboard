@@ -16,6 +16,10 @@ body,
   position: relative;
 }
 
+.content {
+  overflow: auto;
+}
+
 
  ::-webkit-scrollbar {
   width: 10px;
