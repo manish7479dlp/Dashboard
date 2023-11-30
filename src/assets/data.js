@@ -5,6 +5,8 @@ import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import PieChartIcon from '@mui/icons-material/PieChart';
 export  const DATA = [
   {
     title: "Student",
@@ -59,14 +61,14 @@ export  const DATA = [
         icon: <PersonAddAltIcon />,
       },
       {
-        title: "Attandance",
-        to:"/attandance",
-        icon: <SchoolOutlinedIcon />,
+        title: "Bar Chart",
+        to:"/barchart",
+        icon: <BarChartIcon />,
       },
       {
-        title: "Class",
-        to:"/class",
-        icon: <SchoolOutlinedIcon />,
+        title: "Pie Chart",
+        to:"/piechart",
+        icon: <PieChartIcon />,
       },
     ],
   },
