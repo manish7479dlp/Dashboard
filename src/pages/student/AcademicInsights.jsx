@@ -1,14 +1,14 @@
-import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
-import { mockTransactions } from "../../assets/TempData";
+// import { mockTransactions } from "../../assets/TempData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import AddIcon from '@mui/icons-material/Add';
-import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
+// import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
 import Header from "../../components/Header";
 import StatBox from "../../components/StatBox";
-import ProgressCircle from "../../components/ProgressCircle";
+// import ProgressCircle from "../../components/ProgressCircle";
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import BarChart from "../../components/BarChart";
 import PieChart from "../../components/PieChart";
