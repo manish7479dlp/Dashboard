@@ -1,57 +1,58 @@
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
-import QuizIcon from '@mui/icons-material/Quiz';
-// import Diversity3Icon from '@mui/icons-material/Diversity3';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import PieChartIcon from '@mui/icons-material/PieChart';
 import SsidChartIcon from '@mui/icons-material/SsidChart';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
+
 export  const DATA = [
   {
-    title: "Student",
+    title: "Student Management",
     subSection: [
       {
-        title: "Academic",
-        to:"/academic",
+        title: "Student List",
+        to:"/student-list",
+        icon: <SupervisorAccountIcon />,
+      },
+      {
+        title: "Academic Insights",
+        to:"/academic-insights",
         icon: <SchoolOutlinedIcon />,
       },
       {
-        title: "Finance",
-        to:"/finance",
+        title: "Financial Summary",
+        to:"/students-financial-summary",
         icon: <CurrencyRupeeIcon />,
       },
-      {
-        title: "Resource",
-        to:"/resource",
-        icon: <LibraryBooksIcon />,
-      },
-      {
-        title: "Exam",
-        to:"/exam",
-        icon: <QuizIcon />,
-      },
+      
+  
     ],
   },
   {
-    title: "Employee",
+    title: "Employee Management",
     subSection: [
       {
-        title: "Teachers",
+        title: "Teachers Info",
         to:"/contact",
         icon: <SupervisorAccountIcon />,
       },
       {
-        title: "Attandance",
-        to:"/attandance",
-        icon: <SchoolOutlinedIcon />,
+        title: "Financial Summary",
+        to:"/teachers-financial-summary",
+        icon: <CurrencyRupeeIcon />,
       },
       {
-        title: "Class",
-        to:"/class",
-        icon: <SchoolOutlinedIcon />,
+        title: "Attendance",
+        to:"/employee-attendance",
+        icon: <CheckBoxIcon />,
       },
+      // {
+      //   title: "Class",
+      //   to:"/class",
+      //   icon: <SchoolOutlinedIcon />,
+      // },
     ]
   }, {
     title: "Administration",
