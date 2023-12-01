@@ -14,6 +14,8 @@ import Register from './pages/register/Register'
 import Bar from './pages/Bar'
 import Pie from './pages/Pie'
 import Line from './pages/Line'
+import StudentList from './pages/student/StudentList'
+import StudentRegister from './pages/student/StudentRegister'
 // import Test from './components/Test'
 
 const App = () => {
@@ -28,6 +30,10 @@ const App = () => {
               <Topbar/>
               <Routes>
                 <Route path="/" element={<Dashboard/>}/>
+                <Route path="/student-list" element={<StudentList/>}/>
+                <Route path="/student-register" element={<StudentRegister/>}/>
+
+
                 <Route path="/team" element={<Team/>}/>
                 <Route path="/contact" element={<Contact/>}/>
                 <Route path="/academic" element={<Academic/>}/>
