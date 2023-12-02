@@ -5,8 +5,8 @@ import Header from "../../components/Header";
 import PersonIcon from "@mui/icons-material/Person";
 import { useTheme } from "@emotion/react";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
-import { mockDataContacts } from "../../assets/TempData";
 import { Link } from "react-router-dom";
+import {studentsData} from "../../assets/studentData"
 
 
 const StudentList = () => {
@@ -20,29 +20,35 @@ const StudentList = () => {
   };
 
   const columns = [
-    { field: "id", headerName: "ID", flex: 0.5 },
-    { field: "registrarId", headerName: "Registrar ID" },
+    { field: "firstName", headerName: "First Name", flex: 1 },
+    { field: "lastName", headerName: "Last Name", flex: 1 },
     {
-      field: "name",
-      headerName: "Name",
+      field: "fathersName",
+      headerName: "Father's Name",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
-      field: "age",
-      headerName: "Age",
+      field: "aadharNumber",
+      headerName: "Aadhar Number",
       type: "number",
-      headerAlign: "left",
-      align: "left",
+      // headerAlign: "left",
+      // align: "left",
+      flex: 1
     },
     {
-      field: "phone",
-      headerName: "Phone Number",
+      field: "department",
+      headerName: "Department",
       flex: 1,
     },
     {
       field: "email",
       headerName: "Email",
+      flex: 1,
+    },
+    {
+      field: "contact",
+      headerName: "Contact",
       flex: 1,
     },
     {
@@ -56,8 +62,18 @@ const StudentList = () => {
       flex: 1,
     },
     {
-      field: "zipCode",
-      headerName: "Zip Code",
+      field: "district",
+      headerName: "District",
+      flex: 1,
+    },
+    {
+      field: "pincode",
+      headerName: "Pin Code",
+      flex: 1,
+    },
+    {
+      field: "state",
+      headerName: "State",
       flex: 1,
     },
   ];
@@ -124,7 +140,7 @@ const StudentList = () => {
         }}
       >
         <DataGrid
-          rows={mockDataContacts}
+          rows={studentsData}
           columns={columns}
           components={{ Toolbar: GridToolbar }}
           onRowClick={onRowClick}

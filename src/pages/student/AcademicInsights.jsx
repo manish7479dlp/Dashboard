@@ -14,11 +14,61 @@ import BarChart from "../../components/BarChart";
 import PieChart from "../../components/PieChart";
 import LineChart from "../../components/LineChart";
 
-// import LineChart from "../../components/LineChart";
-// // import BarChart from "../../components/BarChart";
-// import StatBox from "../../components/StatBox";
-// import ProgressCircle from "../../components/ProgressCircle";
-// import PieChart from "../../components/PieChart";
+const avgStudent = [
+  {
+    id: "1",
+    label: "1st",
+    value: 149,
+  },{
+    id: "2",
+    label: "2nd",
+    value: 167,
+  },{
+    id: "3",
+    label: "3rd",
+    value: 109,
+  },{
+    id: "4",
+    label: "4th",
+    value: 209,
+  },{
+    id: "5",
+    label: "5th",
+    value: 179,
+  },{
+    id: "6",
+    label: "6th",
+    value: 139,
+  },{
+    id: "7",
+    label: "7th",
+    value: 279,
+  },{
+    id: "8",
+    label: "8th",
+    value: 219,
+  },
+]
+
+const passStudentPercentPerYear = [
+  {
+    id: "1",
+    label: "1st",
+    value: 74,
+  },{
+    id: "2",
+    label: "2nd",
+    value: 83,
+  },{
+    id: "3",
+    label: "3rd",
+    value: 49,
+  },{
+    id: "4",
+    label: "4th",
+    value: 96 ,
+  }
+]
 
 const AcademicInsights = () => {
   const theme = useTheme();
@@ -162,7 +212,7 @@ const AcademicInsights = () => {
             
           </Box>
           <Box height="250px" >
-            <PieChart isDashboard={true} />
+            <PieChart isDashboard={true} data = {avgStudent}/>
           </Box>
         </Box>
 
@@ -183,13 +233,13 @@ const AcademicInsights = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Passing Rate Per Semester
+               Per Year Passing Student Percentage
               </Typography>
               
             
           </Box>
           <Box height="250px" >
-            <PieChart isDashboard={true} />
+            <PieChart isDashboard={true}  data={passStudentPercentPerYear}/>
           </Box>
         </Box>
         
@@ -220,7 +270,7 @@ const AcademicInsights = () => {
             fontWeight="600"
             sx={{ marginBottom: "15px" }}
           >
-            Department Based Student's
+            Department Wise Student
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />

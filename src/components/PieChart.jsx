@@ -1,9 +1,11 @@
 import { ResponsivePie } from "@nivo/pie";
 import { tokens } from "../theme";
 import { useTheme } from "@mui/material";
-import { mockPieData as data } from "../assets/TempData";
+// import { mockPieData as data } from "../assets/TempData";
 
-const PieChart = () => {
+
+
+const PieChart = ({data}) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
@@ -65,7 +67,7 @@ const PieChart = () => {
           background: "inherit",
           color: "rgba(255, 255, 255, 0.3)",
           size: 4,
-          padding: 1,
+          padding: 5,
           stagger: true,
         },
         {
@@ -83,10 +85,10 @@ const PieChart = () => {
           anchor: "bottom",
           direction: "row",
           justify: false,
-          translateX: 0,
+          translateX: 3,
           translateY: 56,
-          itemsSpacing: 0,
-          itemWidth: 100,
+          itemsSpacing: 5,
+          itemWidth: 60,
           itemHeight: 18,
           itemTextColor: "#999",
           itemDirection: "left-to-right",
