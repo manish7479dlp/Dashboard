@@ -1,11 +1,38 @@
 import { useTheme } from "@mui/material";
 import { ResponsiveBar } from "@nivo/bar";
 import { tokens } from "../theme";
-import { mockBarData as data } from "../assets/TempData";
+// import { mockBarData as data } from "../assets/TempData";
 
 const BarChart = ({ isDashboard = false }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  const indexBy = "department"
+  const bottomTitle= indexBy
+  const leftTitle = "No of Student"
+  const departmentName = ["CSE" , "ECE" , "CE" , "EE"]
+
+  const data = [
+    {
+      department: "CSE",
+      CSE: 137,
+      
+      
+    },{
+      department: "EE",
+      EE: 16,
+      
+    },{
+      department: "CE",
+      CE: 247,
+      
+    },{
+      department: "ECE",
+      ECE: 164,
+      
+    },
+  
+]
+
 
   return (
     <ResponsiveBar
@@ -39,14 +66,14 @@ const BarChart = ({ isDashboard = false }) => {
           },
         },
       }}
-      keys={["hot dog", "burger", "sandwich", "kebab", "fries", "donut"]}
-      indexBy="country"
+      keys={departmentName}
+      indexBy={indexBy}
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: "linear" }}
       indexScale={{ type: "band", round: true }}
       colors={{ scheme: "nivo" }}
-      isInteractive={false}
+      isInteractive={true}
       defs={[
         {
           id: "dots",
@@ -74,20 +101,20 @@ const BarChart = ({ isDashboard = false }) => {
       axisTop={null}
       axisRight={null}
       axisBottom={{
-        tickSize: 5,
+        tickSize: 8,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "country", // changed
+        legend: isDashboard ? undefined : bottomTitle, // changed
         legendPosition: "middle",
         legendOffset: 32,
       }}
       axisLeft={{
-        tickSize: 5,
+        tickSize: 8,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "food", // changed
+        legend: isDashboard ? undefined : leftTitle, // changed
         legendPosition: "middle",
-        legendOffset: -40,
+        legendOffset: -50,
       }}
       enableLabel={false}
       labelSkipWidth={12}
