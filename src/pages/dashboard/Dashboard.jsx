@@ -1,6 +1,6 @@
 import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
-import { mockTransactions } from "../../assets/TempData";
+import { mockTransactions , mockPieData } from "../../assets/TempData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import EmailIcon from "@mui/icons-material/Email";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
@@ -280,7 +280,7 @@ const Dashboard = () => {
             Department Based Student's
           </Typography>
           <Box height="200px">
-            <PieChart isDashboard={true} />
+            <PieChart isDashboard={true} data = {mockPieData} />
           </Box>
         </Box>
       </Box>
