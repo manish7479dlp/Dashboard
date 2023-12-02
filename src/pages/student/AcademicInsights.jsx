@@ -1,7 +1,7 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 // import { mockTransactions } from "../../assets/TempData";
-import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
+// import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import AddIcon from '@mui/icons-material/Add';
 // import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
@@ -24,9 +24,7 @@ const AcademicInsights = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
-  const downloadReport = () => {
-    alert("It's is not implemented yet..")
-  }
+
 
   return (
     <Box m="20px">
