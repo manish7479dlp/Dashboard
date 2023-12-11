@@ -88,7 +88,7 @@ const PieChart = ({data}) => {
           translateX: 3,
           translateY: 56,
           itemsSpacing: 5,
-          itemWidth: 60,
+          itemWidth: 80,
           itemHeight: 18,
           itemTextColor: "#999",
           itemDirection: "left-to-right",

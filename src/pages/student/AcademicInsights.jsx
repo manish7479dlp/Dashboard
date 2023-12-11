@@ -14,57 +14,34 @@ import BarChart from "../../components/BarChart";
 import PieChart from "../../components/PieChart";
 import LineChart from "../../components/LineChart";
 
-const avgStudent = [
+const avgAttendance = [
   {
-    id: "1",
-    label: "1st",
-    value: 149,
-  },{
-    id: "2",
-    label: "2nd",
-    value: 167,
-  },{
-    id: "3",
-    label: "3rd",
-    value: 109,
-  },{
-    id: "4",
-    label: "4th",
-    value: 209,
-  },{
-    id: "5",
-    label: "5th",
-    value: 179,
-  },{
-    id: "6",
-    label: "6th",
-    value: 139,
-  },{
-    id: "7",
-    label: "7th",
-    value: 279,
-  },{
-    id: "8",
-    label: "8th",
-    value: 219,
+    id: "Attended",
+    label: "Attended",
+    value: 61,
   },
+  {
+    id: "Absent",
+    label: "Absent",
+    value: 39,
+  }
 ]
 
 const passStudentPercentPerYear = [
   {
-    id: "1",
+    id: "1st Year",
     label: "1st",
     value: 74,
   },{
-    id: "2",
+    id:  "2nd Year",
     label: "2nd",
     value: 83,
   },{
-    id: "3",
+    id: "3rd Year",
     label: "3rd",
     value: 49,
   },{
-    id: "4",
+    id: "4th Year",
     label: "4th",
     value: 96 ,
   }
@@ -206,13 +183,13 @@ const AcademicInsights = () => {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Average Student Per Semester
+                Average Attendance
               </Typography>
               
             
           </Box>
           <Box height="250px" >
-            <PieChart isDashboard={true} data = {avgStudent}/>
+            <PieChart isDashboard={true} data = {avgAttendance}/>
           </Box>
         </Box>
 
